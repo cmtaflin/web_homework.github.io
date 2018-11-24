@@ -1,0 +1,50 @@
+body {
+	background: gray;
+}
+.box-set {
+	position:relative;
+	height:100 px;
+	background: white;
+	display: inline-block; 
+}
+
+.box {
+  width: 75px;
+  height: 50px;
+  display: inline-block;
+}
+
+.box-1 {
+	padding: 10px;
+	float:left;
+	width: 100px;
+	vertical-align: center;
+	font-size: 20px;
+	font color: white;
+	background-color: green;
+}
+
+.box-2 {
+	padding: 10px;
+	float:right;
+	vertical-align: center;
+}
+
+.box-3 {
+	padding: 10px;
+	width: 100px;
+	float:right;
+	vertical-align: center;
+}
+
+.box-4 {
+	padding: 10px;
+	float:right;
+	vertical-align: center;
+}
+
+.rightimage {
+	vertical-align: left
+	width: 75px;
+  	height: 50px;
+}

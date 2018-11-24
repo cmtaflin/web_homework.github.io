@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Visualization Dashboard</title>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--              NAVIGATION BAR                                   -->
+
+<!-----Nav Left Side                                               -->
+
+<nav class= "navbar-default">
+  <div class="navbar header">
+    <div class="container-fluid">  
+      <a class="navbar-left lat_box" href="Landingpage.html"><strong>LATITUDE</strong></a>
+		  
+<!--                                                 Nav Right Side-->
+
+      <ul class= "nav navbar-nav navbar-right">
+  	  		<li class = "dropdown">
+   				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+   				<span class ="caret"></span></a> 	
+  	   			<ul class ="dropdown-menu">
+  	   				<li><a href="Max_Temp_Vis.html">Temperature</a></li>
+  	   				<li><a href="Humidity_Vis.html">Humidity</a></li>
+  	   				<li><a href="Cloudiness_Vis.html">Cloudiness</a></li>
+  	   				<li><a href="Windspeed_Vis.html">Windspeed</a></li>
+  	   			</ul>
+  	   		</li>
+  	   		<li> <a href="Comparison.html">Comparison</a></li>
+  	   		<li> <a href="data.html">Data</a></li>
+ 		 </ul>
+ 	  </div>
+  </div>
+</nav>
+
+<!--                      END NAV BAR                              -->
+
+<div class="container-fluid">
+  <div class ="row">
+
+<!-----START Left Side container                                   -->
+
+    <div class ="col-7 col-md-7">
+      <div class="left_side">
+          <div class ="left_side_title">
+          <h1><strong>Summary: Latitude vs. X</strong></h1>
+          </div>
+          <hr>
+          <br>
+          <br>
+          <figure>
+           <img src="resources/assets/images/Max_Temp.png" width=45% class="responsive pull-left">
+          </figure>
+           <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.To accomplish this analysis, we first pulled data from the OpenWeather API to assemble a dataset of over 500 cities.  After assembling the dataset, we used Matpotlib to plot various aspects of the weather vs. latititude. Factors we looked at included: temperature, cloudiness, wind speed, and humitidy.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlatiosn witnessed.</p>  
+      </div>   
+    </div>
+<!--END Left Side container                                        -->
+
+<!--                                  START Right Side Container----->
+    <div class="col-5 col-md-5">
+      <div class= "right_side">
+        <div class= "right_side_title">
+        <h3><strong>Visualizations</strong></h3>
+        </div>
+        <hr>
+          <a href="Max_Temp_Vis.html"><img src="resources/assets/images/Max_temp.png" width=45% ></a>
+          <a href="Humidity_Vis.html"><img src="resources/assets/images/humidity.png" width=45%></a>
+          <a href="Cloudiness_Vis.html"><img src="resources/assets/images/Cloudiness.png" width=45%></a>
+          <a href="Windspeed_Vis.html"><img src="resources/assets/images/Windspeed.png" width=45%></a>        
+      </div>
+    </div>    
+  </div>
+</div>	
+<!--                                  END   Right Side Container----->
+</body>
