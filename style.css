@@ -6,6 +6,11 @@ h1 {
 	font-size: 35px;
 	}
 
+h2 {
+    font-size: 28px;
+    color: #42caa6;
+    text-align: center;
+}
 h3 {
 	font-size: 25px;
 }
@@ -67,8 +72,16 @@ p {
 	text-align: left;
 	color:green;
 
-.table_date
+.table_date{
 		border: 1px solid black;
 		border-collapse: collapse;
-	}
+}
 
+.panel-default > .panel-heading {
+	background-image: none;
+	background: rgb(250, 250, 250);
+}	
+
+.paragraph-center {
+    text-align: center;
+}
