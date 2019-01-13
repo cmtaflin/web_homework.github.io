@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Visualization Dashboard</title>
+    <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -47,25 +47,28 @@
 
 <!--                      END NAV BAR                              -->
 
-<div class="container-fluid">
-  <div class ="row">
 
-<!-----START Left Side container                                   -->
+
+
+
+<div class="container-fluid">
+  <div class ="row"> -->
+
+<!---START Left Side container-->                                  
 
     <div class ="col-7 col-md-7">
       <div class="left_side">
           <div class ="left_side_title">
-          <h1><strong>Windspeed</strong></h1>
+          <h1><strong>Summary: Latitude vs. X</strong></h1>
           </div>
           <hr>
           <br>
           <br>
           <figure>
-           <img src="Resources/assets/images/windspeed.png" width=45% class="responsive pull-left">
+            <img src="Resources/assets/images/max_temp.png" alt="" id="Max Temperature" width=45%>
           </figure>
-           <p> The data indicates that a widers spread of wind speed as the latitude gets farther from the equator. However, the data
-             is not conclusive enough to state that for sure.
-           </p>
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
           <br>
           <br>
           <br>
@@ -80,9 +83,9 @@
           <br>
       </div>   
     </div>
-<!--END Left Side container                                        -->
+<!---                             END Left Side container   -->                                          
 
-<!--                                  START Right Side Container----->
+<!--                                  START Right Side Container--->
     <div class="col-5 col-md-5">
       <div class= "right_side">
         <div class= "right_side_title">
@@ -97,5 +100,5 @@
     </div>    
   </div>
 </div>  
-<!--                                  END   Right Side Container----->
+--<                                 END   Right Side Container----->
 </body>
